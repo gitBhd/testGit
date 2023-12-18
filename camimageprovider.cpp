@@ -3,7 +3,7 @@
 #include<QFile>
 CamImageProvider::CamImageProvider(QString passedName,QObject *parent) : QQuickImageProvider(QQuickImageProvider::Image)
 {
-    m_imageName=passedName;//AJOUTé comentaire
+    m_imageName=passedName;
     image = QImage(1280,720,QImage::Format_RGB32);
     image.fill(QColor("black"));
     //image.load("waitImg.JPG");
